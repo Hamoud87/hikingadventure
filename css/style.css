@@ -2,3 +2,13 @@ body {
   margin: 0%;
   padding: 0%;
 }
+.intro-background {
+  background-image: url(../images/space-pyramid.jpg);
+  background-size: cover;
+  max-width: 98%;
+  min-height: 400px;
+  background-position: center;
+  margin: 20px auto;
+  border: yellow solid 1px;
+  border-radius: 10px;
+}
