@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;0,800;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ffc009c99.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;0,800;1,700&display=swap" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
     <header class="intro-background">
       <img src="../images/icon.svg" class="icon" alt="" />
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-2x fa-bars" tabindex="0"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -46,23 +49,23 @@
         <div class="hikes">
           <img src="../images/image3.jpg" alt="" />
           <h3>Camping Hikes</h3>
-          <p>Camping hikes are longer than short hikes… </p>
+          <p>Camping hikes are longer than short hikes…</p>
           <a href="camping-hikes.html" class="cta">Learn More</a>
         </div>
       </div>
       <div class="guid-container">
-        <div class="guid-info" >
-        <img src="../images/signpost.svg" alt="">
-        <p>Our local guides understand the local terrain, culture and history of the area.</p>
-      </div>
-      <div class="guid-info">
-        <img src="../images/binoculars.svg" alt="">
-        <p>Experienced with first-aid certification and are expert navigators of the various routes.</p>
-      </div>
-      <div class="guid-info" >
-        <img src="../images/compass.svg" alt="">
-        <p>Will point out areas of interest, and will answer questions.</p>
-      </div>
+        <div class="guid-info">
+          <img src="../images/signpost.svg" alt="" />
+          <p>Our local guides understand the local terrain, culture and history of the area.</p>
+        </div>
+        <div class="guid-info">
+          <img src="../images/binoculars.svg" alt="" />
+          <p>Experienced with first-aid certification and are expert navigators of the various routes.</p>
+        </div>
+        <div class="guid-info">
+          <img src="../images/compass.svg" alt="" />
+          <p>Will point out areas of interest, and will answer questions.</p>
+        </div>
       </div>
       <div class="gallery-container">
         <img src="../images/image1.jpg" alt="" />
@@ -75,36 +78,34 @@
     </main>
     <footer>
       <div class="footer-container">
-      <div class="footer-icons">
+        <div class="footer-icons">
+          <div>
+            <a href=""><img src="../images/icon.svg" alt="" /></a>
+          </div>
+          <div>
+            <a href=""><img src="../images/icon-facebook.svg" alt="" /></a>
+            <a href=""><img src="../images/icon-instagram.svg" alt="" /></a>
+          </div>
+          <div class="download-icons">
+            <a href=""><img src="../images/icon-apple.svg" alt="" /></a>
+            <a href=""><img src="../images/icon-google.svg" alt="" /></a>
+          </div>
+        </div>
         <div>
-    <a href=""><img src="../images/icon.svg" alt=""></a>
+          <p>hike@adventure.no</p>
+          <p>+4747184444</p>
+          <p>Sentrumsvegen 75, 3550 Gol</p>
+        </div>
+        <div>
+          <ul class="nav-footer">
+            <li><a href="about.html">Our Guides</a></li>
+            <li><a href="about.html">Sustainability</a></li>
+            <li><a href="about.html">Health & Safety</a></li>
+            <li><a href="about.html">FAQ</a></li>
+          </ul>
+        </div>
       </div>
-         <div>
-          <a href=""><img src="../images/icon-facebook.svg" alt=""></a> 
-           <a href=""><img src="../images/icon-instagram.svg" alt=""></a>
-         </div>
-      <div>
-          <a href=""><img src="../images/icon-apple.svg" alt=""></a>
-           <a href=""><img src="../images/icon-google.svg" alt=""></a>
-      </div>
-   
-      </div>
-      <div>
-        <p>hike@adventure.no</p>
-        <p>+4747184444</p>
-        <p>Sentrumsvegen 75, 3550 Gol</p>
-        
-      </div>
-      <div >
-        <ul class="nav-footer">
-          <li><a href="about.html">Our Guides</a></li>
-          <li><a href="about.html">Sustainability</a></li>
-          <li><a href="about.html">Health & Safety</a></li>
-          <li><a href="about.html">FAQ</a></li>
-        </ul>
-      </div>
-    </div>
-        <p id="copy-right">© 2021 Hike Adventure</p>
+      <p id="copy-right">© 2021 Hike Adventure</p>
     </footer>
   </body>
 </html>
