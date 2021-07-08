@@ -132,7 +132,7 @@ h2,
 }
 .section-container img,
 .hikes-container img {
-  max-width: 400px;
+  max-width: 420px;
   min-height: 350px;
   border-radius: 5px 5px 0px 0px;
 }
@@ -141,15 +141,15 @@ h2,
 .hikes-items {
   background-color: #d0e4fa;
   border-radius: 5px;
-  max-width: 100%;
-  min-height: 580px;
+  max-width: 110%;
+  min-height: 600px;
   text-align: center;
 }
 
 .hikes p,
 .hikes-items p,
 .guid-info {
-  max-width: 320px;
+  max-width: 380px;
   text-align: left;
   margin: 20px auto;
 }
