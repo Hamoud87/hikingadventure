@@ -24,7 +24,7 @@ body {
   margin: 0%;
 }
 .hikes-background {
-  background-image: url(../images/hikes-background.jpg);
+  background-image: url(../images/tour-background.jpg);
   min-height: 500px;
 }
 .short-hikes-background {
@@ -144,7 +144,8 @@ h2 {
 }
 
 .text,
-.hikes-text {
+.hikes-text,
+.short-hikes-text {
   max-width: 80%;
   margin: 20px auto;
   font-size: 19px;
@@ -183,7 +184,9 @@ h2 {
   min-height: 600px;
   text-align: center;
 }
-
+.hikes-items {
+  min-height: 740px;
+}
 .hikes p,
 .hikes-items p,
 .guid-info {
@@ -231,7 +234,7 @@ h2 {
 .footer-container,
 #copy-right {
   background-color: #8c5320;
-  color: #000000;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
@@ -342,7 +345,6 @@ form a {
     float: right;
     margin: 20px;
     color: #8c5320;
-    border-radius: 5px;
   }
 
   nav {
@@ -393,22 +395,29 @@ form a {
   }
 
   .section-container img,
-  .hikes-container img {
+  .hikes-container img,
+  .short-hikes-container img,
+  .long-hikes-container img,
+  .camping-hikes-container img {
     max-width: 100%;
   }
   .hikes,
-  .hikes-items {
+  .hikes-items,
+  .short-hikes-container,
+  .long-hikes-container,
+  .camping-hikes-container {
     max-width: 95%;
     min-height: 570px;
   }
   .hikes-items {
-    min-height: 670px;
+    min-height: 740px;
   }
-  .hikes p {
-    max-width: 300px;
-  }
+
   .section-container,
   .hikes-container,
+  .short-hikes-container,
+  .long-hikes-container,
+  .camping-hikes-container,
   .guid-container,
   .footer-container {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
