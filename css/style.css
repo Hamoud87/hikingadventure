@@ -10,6 +10,9 @@ body {
 }
 .intro-background,
 .hikes-background,
+.short-hikes-background,
+.long-hikes-background,
+.camping-hikes-background,
 .about-background,
 .contact-background {
   background-image: url(../images/camel.jpg);
@@ -22,6 +25,18 @@ body {
 }
 .hikes-background {
   background-image: url(../images/hikes-background.jpg);
+  min-height: 500px;
+}
+.short-hikes-background {
+  background-image: url(../images/short-hikes-background.jpg);
+  min-height: 500px;
+}
+.long-hikes-background {
+  background-image: url(../images/long-hikes-background.jpg);
+  min-height: 500px;
+}
+.camping-hikes-background {
+  background-image: url(../images/camping-hikes-background.jpg);
   min-height: 500px;
 }
 .about-background {
@@ -59,22 +74,26 @@ nav li a {
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
+  padding: 5px 11px;
 }
-nav li a:hover {
+nav li a:hover,
+.link-wrapper a:hover {
   color: #208c7b;
   transition: 0.3s;
 }
 .active {
   background-color: #8c5320;
+  color: #ffffff;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 4px;
 }
 #hamburger-menu,
 .hamburger-label {
   display: none;
 }
 p,
-form label {
+form label,
+a {
   font-family: "optima";
   font-weight: 100;
 }
@@ -85,53 +104,72 @@ h1 {
 
 h3,
 p,
-.nav-footer a {
+.link-wrapper a {
   font-size: 19px;
 }
 .intro-text,
 .tour-text h1,
+.short-hikes-text h1,
+.long-hikes-text h1,
+.camping-hikes-text h1,
 .about-text h1,
 .contact-text h1 {
   text-align: center;
   margin: 20% auto 0px;
   background: rgba(255, 255, 255, 0.8);
   max-width: 200px;
-  border-radius: 3px;
+  border-radius: 5px;
+}
+.short-hikes-text h1,
+.long-hikes-text h1,
+.camping-hikes-text h1 {
+  background: #8c5320;
+  color: #ffffff;
 }
 .tour-text h1,
+.short-hikes-text h1,
+.long-hikes-text h1,
+.camping-hikes-text h1,
 .about-text h1,
 .contact-text h1 {
   margin-top: 100px;
-  max-width: 150px;
+  max-width: 200px;
   padding: 10px;
 }
 .intro-text {
   max-width: 400px;
 }
-h2,
-.text,
-.hikes-text {
+h2 {
   text-align: center;
 }
+
 .text,
 .hikes-text {
-  max-width: 76%;
+  max-width: 80%;
   margin: 20px auto;
   font-size: 19px;
+  line-height: 30px;
 }
 
 .section-container,
 .hikes-container,
+.short-hikes-container,
+.long-hikes-container,
+.camping-hikes-container,
 .guid-container,
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   column-gap: 25px;
   row-gap: 15px;
   justify-items: center;
+  margin: 0px 0px 10px;
 }
 .section-container img,
-.hikes-container img {
+.hikes-container img,
+.short-hikes-container img,
+.long-hikes-container img,
+.camping-hikes-container img {
   max-width: 400px;
   min-height: 350px;
   border-radius: 5px 5px 0px 0px;
@@ -155,6 +193,7 @@ h2,
 }
 .guid-info {
   text-align: center;
+  line-height: 30px;
 }
 .cta {
   font-family: "optima";
@@ -164,6 +203,13 @@ h2,
   border: #000000 solid 2px;
   border-radius: 3px;
   padding: 5px;
+}
+.cta:hover {
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+.cta-button:hover {
+  background-color: #8c5320;
 }
 .intro-button {
   color: #ffffff;
@@ -177,20 +223,15 @@ h2,
   align-items: center;
   max-width: 150px;
 }
-.gallery-container {
-  text-align: center;
-  margin: 10px 0px;
-}
-.gallery-container img {
-  max-width: 150px;
-  padding: 0px 20px;
+.intro-button:hover {
+  color: #000000;
+  border: #000000 solid 1px;
 }
 
 .footer-container,
 #copy-right {
-  column-gap: 20px;
-  background-color: #484646;
-  color: #ffffff;
+  background-color: #8c5320;
+  color: #000000;
   padding: 20px;
   text-align: center;
 }
@@ -199,10 +240,11 @@ h2,
   flex-direction: column;
   text-align: center;
 }
-.nav-footer {
+.link-wrapper a {
   text-decoration: none;
   color: #ffffff;
   display: block;
+  margin: 15px;
 }
 
 #copy-right {
