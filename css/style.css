@@ -205,7 +205,7 @@ h2 {
   color: #ffffff;
   background-color: #8c5320;
   border-radius: 3px;
-  padding: 5px;
+  padding: 5px 10px;
 }
 .cta:hover {
   background-color: #ffffff;
