@@ -24,11 +24,11 @@ body {
   margin: 0%;
 }
 .hikes-background {
-  background-image: url(../images/tour-background.jpg);
+  background-image: url(../images/tour-background.jpeg);
   min-height: 500px;
 }
 .short-hikes-background {
-  background-image: url(../images/short-hikes-background.jpg);
+  background-image: url(../images/short-hikes-background.jpeg);
   min-height: 500px;
 }
 .long-hikes-background {
@@ -190,7 +190,7 @@ h2 {
 .hikes p,
 .hikes-items p,
 .guid-info {
-  max-width: 360px;
+  max-width: 330px;
   text-align: left;
   margin: 20px auto;
 }
@@ -202,18 +202,17 @@ h2 {
   font-family: "optima";
   font-weight: 600;
   text-decoration: none;
-  color: #000000;
-  border: #000000 solid 2px;
+  color: #ffffff;
+  background-color: #8c5320;
   border-radius: 3px;
   padding: 5px;
 }
 .cta:hover {
   background-color: #ffffff;
+  color: #000000;
   transition: 0.3s;
 }
-.cta-button:hover {
-  background-color: #8c5320;
-}
+
 .intro-button {
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -235,7 +234,7 @@ h2 {
 #copy-right {
   background-color: #8c5320;
   color: #ffffff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 .footer-icons {
@@ -319,7 +318,7 @@ textarea {
 form a {
   text-decoration: none;
   font-family: "Montserrat", Helvetica, sans-serif;
-  background-color: #208c7b;
+  background-color: #8c5320;
   color: #ffffff;
   max-width: 140px;
   padding: 7px;
@@ -327,7 +326,10 @@ form a {
   margin: 5px auto;
   font-weight: 600;
 }
-
+form a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
 @media (max-width: 900px) {
   #hamburger-menu,
   .hamburger-label {
@@ -389,6 +391,7 @@ form a {
   .intro-button {
     margin: 50px auto 0px;
   }
+
   .text,
   .hikes-text {
     max-width: 98%;
